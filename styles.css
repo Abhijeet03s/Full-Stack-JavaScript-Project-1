@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Section */
+
+
+.navbar-container {
+  display: flex;
+  font-family: "Orbitron";
+  font-weight: bold;
+  justify-content: space-around;
+}
+.list {
+  display: flex;
+  font-size: 25px;
+}
+
+.list-item {
+  display: flex;
+  padding: 15px 40px;
+  justify-content: space-around;
+}
+
+.list :first-child::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  top: 70px;
+  left: 450px;
+  width: 3%;
+  background: black;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Orbitron";
+  
+}
+.search-icon {
+  display: flex;
+  padding: 10px 10px;
+  width: 25px;
+  margin-top: 24px;
+  padding: 15px 10px;
+}
+div img {
+  margin-top: 30px;
+}
+
+.nav-button {
+  display: flex;
+  width: 150%;
+  font-size: 20px;
+  font-family: "Orbitron";
+  justify-content: center;
+  background-color: #fff;
+  margin-top: 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+/* Hero Section */
+
+.hero-container {
+  margin: 50px auto 0px 30px;
+  font-family: "Poppins";
+}
+.hero-container > div > img {
+  width: 360px;
+  position: relative;
+  top: -20px;
+  left: 25px;
+}
+
+.hero-heading {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  text-align: center;
+  font-size: 55px;
+  margin: auto;
+  font-family: "Orbitron";
+}
+.hero-description {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  text-align: center;
+  font-size: 18px;
+  margin: auto 90px;
+}
+.button-email {
+  position: absolute;
+  top: 75%;
+  left: 57%;
+  width: 12%;
+  border-radius: 10px;
+  font-size: 25px;
+}
+.button-join {
+  position: absolute;
+  top: 75%;
+  left: 71%;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+}
+
+.contact-heading {
+  position: absolute;
+  top: 80%;
+  left: 65%;
+  font-size: 25px;
+}
+.icons {
+  position: absolute;
+  top: 88%;
+  left: 64%;
+}
+.star {
+  position: absolute;
+  top: 25%;
+  left: 90%;
+}
+.star2 {
+  position: absolute;
+  top: 75%;
+  left: 40%;
+}
+.star2 img {
+  width: 70%;
+}
+.globe {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+}
+.square {
+  position: absolute;
+  z-index: -1;
+  top: 33%;
+  left: 6%;
+}
