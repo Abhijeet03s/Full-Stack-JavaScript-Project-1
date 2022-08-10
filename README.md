@@ -9,7 +9,7 @@
 
 # Live Project 1 : Street Style Landing Page
 
-## Project 1: [Live Link]()
+## Project 1: [Live Link](https://live-project-1-fs-js.netlify.app/)
 
 -   Skills Gained in this project.
     -   Learned css positioning like relative and absolute.
