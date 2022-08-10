@@ -1,149 +1,291 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Navbar Section */
+body {
+  font-family: "Orbitron", sans-serif;
+  overflow: hidden;
+}
 
+button {
+  cursor: pointer;
+}
+
+.container {
+  padding: 3% 6%;
+}
 
 .navbar-container {
   display: flex;
-  font-family: "Orbitron";
-  font-weight: bold;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .list {
   display: flex;
-  font-size: 25px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .list-item {
-  display: flex;
-  padding: 15px 40px;
-  justify-content: space-around;
+  list-style-type: none;
+  font-size: 20px;
+  padding: 0 30px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.list :first-child::after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  top: 70px;
-  left: 450px;
-  width: 3%;
-  background: black;
+.list-item:first-child {
+  font-weight: 800;
+  font-size: 24px;
+  text-decoration: underline;
 }
 
 .button-group {
   display: flex;
-  justify-content: space-between;
-  font-family: "Orbitron";
-  
+  flex-direction: row;
+  align-items: center;
 }
+
 .search-icon {
-  display: flex;
-  padding: 10px 10px;
-  width: 25px;
-  margin-top: 24px;
-  padding: 15px 10px;
-}
-div img {
-  margin-top: 30px;
+  transform: scale(0.9);
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .nav-button {
-  display: flex;
-  width: 150%;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  padding: 3px 40px;
   font-size: 20px;
-  font-family: "Orbitron";
-  justify-content: center;
-  background-color: #fff;
-  margin-top: 30px;
-  border: 3px solid black;
-  border-radius: 10px;
-  padding: 10px 15px;
+  font-weight: 400;
+  color: #616161;
+  border-radius: 15px;
+  border: 3px solid #000000;
 }
-
-/* Hero Section */
 
 .hero-container {
-  margin: 50px auto 0px 30px;
-  font-family: "Poppins";
-}
-.hero-container > div > img {
-  width: 360px;
+  padding-top: 40px;
   position: relative;
-  top: -20px;
-  left: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.square {
+  z-index: -1;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+}
+
+.globe {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+.globe img {
+  width: 70%;
+}
+
+.star {
+  position: absolute;
+  right: 2%;
+  top: 10%;
+  transform: scale(0.9);
+}
+
+.star2 {
+  position: absolute;
+  left: 40%;
+  bottom: 30%;
+  transform: scale(0.7);
+}
+
+img[alt="person-hero-image"] {
+  padding-top: 35px;
+  height: 70%;
+}
+
+.hero-container-right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 140px;
+  align-items: center;
 }
 
 .hero-heading {
-  position: absolute;
-  top: 40%;
-  left: 45%;
-  text-align: center;
-  font-size: 55px;
-  margin: auto;
-  font-family: "Orbitron";
+  font-size: 60px;
 }
+
 .hero-description {
-  position: absolute;
-  top: 55%;
-  left: 40%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 40px 80px 80px 80px;
   text-align: center;
-  font-size: 18px;
-  margin: auto 90px;
 }
+
 .button-email {
-  position: absolute;
-  top: 75%;
-  left: 57%;
-  width: 12%;
+  font-family: "Orbitron", sans-serif;
+  background-color: transparent;
+  padding: 3px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #616161;
   border-radius: 10px;
-  font-size: 25px;
+  border: 2px solid #000000;
+  margin-right: 10px;
 }
+
 .button-join {
-  position: absolute;
-  top: 75%;
-  left: 71%;
+  font-family: "Orbitron", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2px 5px;
+  font-size: 18px;
+  font-weight: 500;
   border-radius: 10px;
-  font-size: 25px;
-  background-color: black;
-  color: white;
 }
 
 .contact-heading {
-  position: absolute;
-  top: 80%;
-  left: 65%;
-  font-size: 25px;
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #616161;
+  text-transform: capitalize;
 }
+
 .icons {
-  position: absolute;
-  top: 88%;
-  left: 64%;
+  margin-top: 10px;
+  cursor: pointer;
 }
-.star {
-  position: absolute;
-  top: 25%;
-  left: 90%;
+
+.icons img {
+  height: 40px;
+  padding: 0 10px;
 }
-.star2 {
-  position: absolute;
-  top: 75%;
-  left: 40%;
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 16px 30px;
+  }
+  .list-item:first-child {
+    font-size: 23px;
+  }
+  .hero-container *:nth-child(5) {
+    width: 40%;
+  }
+  img[alt="person-hero-image"] {
+    padding-top: 36px;
+    height: 50%;
+  }
+  .square {
+    left: 0;
+    top: 18%;
+  }
+  .square img {
+    height: 360px;
+  }
+  .globe img {
+    width: 70%;
+  }
+  .star {
+    right: 1%;
+    top: 7%;
+    transform: scale(0.7);
+  }
+  .star2 {
+    left: 40%;
+    top: 55%;
+  }
+  .star2 img {
+    width: 80%;
+  }
+  .hero-container-right {
+    padding-top: 120px;
+  }
+  .hero-heading {
+    font-size: 40px;
+  }
 }
-.star2 img {
-  width: 70%;
+@media only screen and (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+  img[alt="brand-logo"] {
+    height: 40px;
+  }
+  .nav-button {
+    padding: 3px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  .list {
+    display: none;
+  }
+  .search-icon {
+    transform: scale(0.6);
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  img[alt="person-hero-image"] {
+    height: 500px;
+    padding-left: 130px;
+  }
+  .square img {
+    height: 400px;
+    padding-left: 130px;
+  }
+  .square {
+    left: 12%;
+    top: 19%;
+  }
+  .globe,
+  .star,
+  .star2 {
+    display: none;
+  }
+  .hero-container-right {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .hero-heading {
+    font-size: 44px;
+    text-align: center;
+  }
 }
-.globe {
-  position: absolute;
-  top: 20%;
-  left: 55%;
-}
-.square {
-  position: absolute;
-  z-index: -1;
-  top: 33%;
-  left: 6%;
+
+@media only screen and (max-width: 450px) {
+  .nav-button {
+    padding: 3px 15px;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+  .hero-container-right{
+    padding-top: 10px;
+  }
+  img[alt="person-hero-image"] {
+    height: 340px;
+    padding-left: 10px;
+  }
+  .square img {
+    height: 300px;
+    padding-left: 5px;
+  }
+  .square {
+    left: 8%;
+    top: 14%;
+  }
+  .hero-heading {
+    font-size: 40px;
+  }
+  .hero-description {
+    padding: 40px;
+  }
 }
