@@ -9,17 +9,19 @@
 
 # Live Project 1 : Street Style Landing Page
 
-## Project 1: [Live Link](https://live-project-1-fs-js.netlify.app/)
+## Project 1: (Mobile Responsive)
+[Live Link](https://live-project-1-fs-js.netlify.app/)
 
 -   Skills Gained in this project.
     -   Learned css positioning like relative and absolute.
     -   Learned how to create underline on navbar.
-    
+    -   Learned how to use z-index.
+       
 ---
 
-## Time taken to finish this project⏲
+## Time taken to finish this project(including adding media queries)⏲
 
--   So it took me around 6 hours to complete my first CSS project.
+-   So it took me around 7.5 hours to complete my first CSS project.
 
 #### Screenshot
 
